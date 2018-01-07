@@ -1,0 +1,114 @@
+<!docdtype html>
+<html>
+<head>
+
+<title>Trainer</title>
+<style>
+body{
+margin:0;
+background:url('gympic.jpg');
+background-size:cover;
+}
+.gym{
+width:100%;
+background:	#FFFF00;
+height:320px;
+margin-top:55px;
+opacity:0.9;
+}
+
+.nav{
+width:100%;
+background:	#FFFF00;
+height:110px;
+margin-top:55px;
+opacity:0.6;
+}
+ul
+{
+list-style:none;
+padding:0;
+margin:0;
+position:responsive;
+}
+li{
+float:left;
+margin-top:30px;
+}
+a{
+width:150px;
+color:black;
+display:inline;
+text-decoration:none;
+font-size:25px;
+text-align:center;
+padding:10px;
+border-radius:10px;
+font-family:Comic Sans MS;
+font-weight:bold;
+}
+a:hover{
+background:#FFFAF0;
+transition:0.9s;
+}
+
+</style>
+</head>
+
+<body>
+<div class="nav">
+<ul>
+<li> <a href ="home.html">HOME</a></li>
+<li> <a href ="user.html">USER</a></li>
+<li> <a href ="trainer1.html">TRAINER</a></li>
+<li> <a href ="member1.html">MEMBER</a></li>
+<li> <a href ="payment1.html">PAYMENT</a></li>
+<li> <a href ="gymtype1.php">GYM</a></li>
+<li> <a href ="filter1.html">COMPLEX DATA FETCH</a></li>
+<li> <a href ="about.html">ABOUT</a></li>
+
+
+</ul>
+</div>
+<div class="gym">
+<center>
+<h3>------------------------------------------------------------------------</h3>
+
+
+<form method="post" action="connecttrainer.php">
+				<p align="center"> 
+					<label > Trainer Name</label>
+					<input  name="trainer_name" required="required" maxlength="27" type="text" placeholder="only 27 characters allowed"/>
+				</p>
+				<p align="center"> 
+					<label >Trainer Email</label>
+					<input  name="trainer_email" required="required" type="email" />
+				</p>
+				
+				<p align="center"> 
+					<label >Trainer PhoneNumber</label>
+					<input  name="trainer_phonenumber" required="required" type="text"  pattern="\d{10}" placeholder="Please enter exact 10 digits"/>
+				</p>
+				
+				<p align="center"> 
+					<label >Trainer ID</label>
+					<input  name="trainer_id" required="required" type="text" maxlength="10" placeholder="only 10 characters allowed"/>
+				</p>
+				
+				<p align="center"> 
+					<label >Trainer Address</label>
+					<input  name="trainer_address" required="required" type="text" />
+				</p>
+				<p  align="center"> 
+				
+			<input type="image" value="submit" src="button1.jpg" alt="Submit" width="120" height="45">
+			
+<h4>------------------------------------------------------------------------</h4>			
+		</center>	
+			</div>
+			
+
+
+</body>
+
+</html>
